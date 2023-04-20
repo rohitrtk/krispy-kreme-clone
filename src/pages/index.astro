@@ -1,0 +1,81 @@
+---
+import Head from "@components/Head.astro";
+import Banner from "@components/Banner.astro";
+import Footer from "@components/Footer.astro";
+
+import Home1 from "@assets/home1.jpg";
+import Home2 from "@assets/home2.jpg";
+import Home3 from "@assets/home3.jpg";
+import Home4 from "@assets/home4.jpg";
+import Home5 from "@assets/home5.png";
+import Home6 from "@assets/home6.png";
+
+import Doughnuts from "@assets/icons/Doughnuts.svg";
+import CoffeeEspresso from "@assets/icons/CoffeeEspresso.svg";
+import FrozenDrinks from "@assets/icons/FrozenDrinks.svg";
+import BakedGoods from "@assets/icons/BakedGoods.svg";
+import Collectibles from "@assets/icons/Collectibles.svg";
+---
+
+<html lang="en">
+	<Head title="Home"/>
+	<body>
+		<Banner />
+		<section>
+			<div class="flex flex-col">
+				<div class="p-2">
+					<img src={Home1} />
+				</div>
+				<div class="flex flex-row">
+					<div class="p-2 w-1/2">
+						<img src={Home2} />
+					</div>
+					<div class="p-2 w-1/2">
+						<img src={Home3} />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="flex flex-col justify-center items-center pt-5 my-5">
+			<div class="text-center mb-10">
+				<span class="text-red-600">Discover</span>
+				<br>
+				<span class="text-green-800 font-bold">OUR MENU</span>
+			</div>
+
+			<div class="flex flex-row text-gray-800 text-center font-bold gap-16">
+				<div><img src={Doughnuts} /><span class="">Doughnuts</span></div>
+				<div><img src={CoffeeEspresso} /><span class="">Coffee & Espresso</span></div>
+				<div><img src={FrozenDrinks} /><span class="">Frozen Drinks</span></div>
+				<div><img src={BakedGoods} /><span class="">Baked Goods</span></div>
+				<div><img src={Collectibles} /><span class="">Collectibles</span></div>
+			</div>
+		</section>
+
+		<section>
+			<div class="flex flex-col p-2">
+				<div class="relative justify-center items-center text-center">
+					<img class="" src={Home4} />
+					<span class="text-green-800">NEED to RAI$E some DOUGH?</span>
+				</div>
+				<div class="flex flex-row">
+					<div class="relative w-1/2 border-solid border-green-800 border-4 flex flex-col justify-center items-center text-center p-20 gap-5">
+						<img class="absolute" src={Home5} />
+						<span>Become part of the</span>
+						<span class="text-green-800">Krispy Kreme Team</span>
+						<span>Our product may be special and unique - but it's our people who make the difference</span>
+						<button class="bg-red-600 text-white rounded-full px-5 py-2">
+							APPLY NOW
+						</button>
+					</div>
+					<div class="relative w-1/2 flex flex-col justify-center items-center text-center p-20 gap-5">
+						<img class="absolute w-full" src={Home6} />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<Footer />
+	</body>
+</html>
