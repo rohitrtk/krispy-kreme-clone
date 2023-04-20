@@ -2,26 +2,63 @@
 import Navbar from "@components/Navbar.astro";
 
 import Logo from "@assets/logo.svg";
+import Open from "@assets/icons/menu.svg";
+import Close from "@assets/icons/close.svg";
 ---
-<header class="flex flex-row w-full">
-  <div class="container justify-center items-center m-auto">
-    <div class="flex flex-row justify-between py-2">
-      <div class="flex flex-row items-center gap-5">
-        <a href="/">
-          <img src={Logo}/>
-        </a>
-        <div class="items-end justify-center h-1/2">
-          <button class="bg-red-600 text-white rounded-full px-5">
-            <span class="text-sm">ORDER</span>
-            <br>
-            DELIVERY
+<astro-banner data-open={Open} data-close={Close}>
+  <header class="flex flex-row w-full shadow-md">
+    <div class="container justify-center items-center m-auto">
+      <div class="flex flex-row justify-between py-2">
+        <div class="flex flex-row items-center gap-5">
+          <a href="/">
+            <img src={Logo}/>
+          </a>
+          <div class="items-end justify-center h-1/2">
+            <button class="bg-red-600 text-white rounded-full px-5">
+              <span class="text-sm">ORDER</span>
+              <br>
+              DELIVERY
+            </button>
+          </div>
+        </div>
+    
+        <div class="lg:flex hidden items-end mx-10">
+          <Navbar />
+        </div>
+  
+        <div class="lg:hidden flex items-center justify-center">
+          <button class="w-[32px] h-[32px] hover:bg-gray-200 rounded-lg" id="navbar-hamburger-menu">
+            <img src={Open} id="navbar-hamburger-img"/>
           </button>
         </div>
       </div>
-  
-      <div class="flex items-end mx-10">
-        <Navbar />
-      </div>
     </div>
+  </header>
+  <div class="w-full hidden justify-center mt-5" id="mobile-nav">
+    <Navbar />
   </div>
-</header>
+</astro-banner>
+
+<script>
+  class AstroBanner extends HTMLElement {
+    constructor() {
+      super();
+
+      let open = false;
+      const openIcon = this.dataset.open as string;
+      const closeIcon = this.dataset.close as string;
+
+      const hamburgerButton       = document.getElementById("navbar-hamburger-menu")  as HTMLDivElement;
+      const hamburgerButtonImage  = document.getElementById("navbar-hamburger-img")   as HTMLImageElement;
+      const mobileNavbar          = document.getElementById("mobile-nav")             as HTMLDivElement;
+    
+      hamburgerButton.addEventListener("click", () => {
+        open = !open;
+        mobileNavbar.classList.toggle("hidden");
+        hamburgerButtonImage.src = open ? closeIcon : openIcon;
+      });
+    }
+  }
+
+  customElements.define("astro-banner", AstroBanner);
+</script>
