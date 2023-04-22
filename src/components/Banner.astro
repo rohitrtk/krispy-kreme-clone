@@ -6,18 +6,18 @@ import Open from "@assets/icons/menu.svg";
 import Close from "@assets/icons/close.svg";
 ---
 <astro-banner data-open={Open} data-close={Close}>
-  <header class="flex flex-row w-full shadow-md">
+  <header class="flex flex-row px-10 sm:px-0 w-full shadow-md">
     <div class="container justify-center items-center m-auto">
       <div class="flex flex-row justify-between py-2">
-        <div class="flex flex-row items-center gap-5">
+        <div class="flex flex-row items-center gap-5 lg:justify-start justify-center w-full">
           <a href="/">
             <img src={Logo}/>
           </a>
           <div class="items-end justify-center h-1/2">
             <button class="bg-red-600 text-white rounded-full px-5">
-              <span class="text-sm">ORDER</span>
+              <span class="text-sm">Order</span>
               <br>
-              DELIVERY
+              Delivery
             </button>
           </div>
         </div>

@@ -1,12 +1,62 @@
 ---
 import Head from "@components/Head.astro";
 import Banner from "@components/Banner.astro";
+import Footer from "@components/Footer.astro";
+
+import About1 from "@assets/about/about1.jpg";
+import About2 from "@assets/about/about2.png";
+import About3 from "@assets/about/about3.jpg";
+import About4 from "@assets/about/about4.jpg";
+import About5 from "@assets/about/about5.png";
+import About6 from "@assets/about/about6.png";
 ---
 
 <html lang="en">
 	<Head title="About Us"/>
 	<body>
 		<Banner />
-		<h1>About us</h1>
+
+		<div class="w-full h-[230px] flex flex-col justify-center items-center text-center" style={`background-image: url(${About1})`}>
+			<span class="text-white font-bold text-6xl">ABOUT US</span>
+		</div>
+		<div class="w-full h-auto flex justify-center -mt-16">
+			<img src={About2} />
+		</div>
+		
+		<section class="md:px-40 md:py-10 p-1">
+			Krispy Kreme began making the world famous original glazed doughnut over 80 years ago. It was December 11th, 2001 that the experience came to Canada with our first store in Mississauga, Ontario. Soon after, our first store opened in Quebec in Montreal. From then on, Krispy Kreme became a destination for those looking to experience the magic of our hot and fresh doughnuts and coffee.
+			<br><br>
+			In 2010, we opened our first Doughnut Café in downtown Toronto. Our cafés bring the fresh experience to our loyal customers in neighbourhoods across the city. We want our cafés to be convenient and comfortable spot to enjoy a doughnut, sip a coffee, and savour one of our freshly baked muffins, croissants, or bagels. Look for cafés opening near you soon.
+		</section>
+		<hr class="md:mx-40 md:py-5 p-1">
+		<section class="md:px-40 md:py-10 p-1 text-center">
+			<span class="flex flex-col justify-center items-center">
+				<img src={About6} width="54" height="68"/>
+				OUR STORES
+			</span>
+			<div class="flex md:flex-row flex-col gap-5">
+				<div class="text-start md:w-1/2">
+					<img src={About3} />
+					<span class="font-bold">HOTLIGHT FACTORY STORES</span>
+					<p>
+						All our doughnuts are made fresh throughout the day in our Hotlight stores. Enjoy the ultimate Krispy Kreme experience and see our doughnuts being made in our unique Doughnut Theatre. When the Hotlight is on we’re making fresh doughnuts. Our Hotlight stores can be found in Mississauga (ON), Greenfield Park (QC), and Quebec City (QC)
+					</p>
+				</div>
+
+				<div class="text-start md:w-1/2">
+					<img src={About4} />
+					<span class="font-bold">DOUGHNUT CAFÉS</span>
+					<p>
+						Our Doughnut Cafés receive deliveries of fresh doughnuts twice per day from our Hotlight Factory stores. With a warm and welcoming store environment and comfortable seating, our cafés provide the perfect pit-stop for a coffee, doughnut or snack.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<div class="w-full h-[230px] flex justify-center items-start bg-cover bg-no-repeat bg-center" style={`background-image: url(${About5})`}>
+			<a class="bg-kk-red rounded-full p-5 m-2 text-white">FIND YOUR NEAREST STORE</a>
+		</div>
+
+		<Footer />
 	</body>
 </html>

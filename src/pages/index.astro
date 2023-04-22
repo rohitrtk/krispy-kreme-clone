@@ -22,18 +22,10 @@ import Collectibles from "@assets/icons/Collectibles.svg";
 	<body>
 		<Banner />
 		<section>
-			<div class="flex flex-col">
-				<div class="p-2">
-					<img src={Home1} />
-				</div>
-				<div class="flex flex-row">
-					<div class="p-2 w-1/2">
-						<img src={Home2} />
-					</div>
-					<div class="p-2 w-1/2">
-						<img src={Home3} />
-					</div>
-				</div>
+			<div class="grid grid-cols-2 gap-4">	
+				<img class="col-span-2" src={Home1} />
+				<img class="md:col-span-1 col-span-2" src={Home2} />
+				<img class="md:col-span-1 col-span-2" src={Home3} />
 			</div>
 		</section>
 
@@ -44,7 +36,7 @@ import Collectibles from "@assets/icons/Collectibles.svg";
 				<span class="text-green-800 font-bold">OUR MENU</span>
 			</div>
 
-			<div class="flex flex-row text-gray-800 text-center font-bold gap-16">
+			<div class="flex flex-row flex-wrap justify-center items-center text-gray-800 text-center font-bold gap-16">
 				<div><img src={Doughnuts} /><span class="">Doughnuts</span></div>
 				<div><img src={CoffeeEspresso} /><span class="">Coffee & Espresso</span></div>
 				<div><img src={FrozenDrinks} /><span class="">Frozen Drinks</span></div>
