@@ -1,12 +1,59 @@
 ---
 import Head from "@components/Head.astro";
+import Header from "@components/Header.astro";
 import Banner from "@components/Banner.astro";
+import Footer from "@components/Footer.astro";
+
+import Fundraising1 from "@assets/Fundraising1.png";
+import Fundraising2 from "@assets/Fundraising2.jpg";
 ---
 
 <html lang="en">
 	<Head title="Fundraising"/>
 	<body>
-		<Banner />
-		<h1>Fundraising</h1>
+		<Header />
+
+		<Banner title="FUNDRAISING" />
+		<section class="md:px-40 md:pt-10 p-1 flex flex-col justify-center items-center">
+			<span class="text-center text-kk-red">Need Funds?</span>
+			<p>
+				Since early in Krispy Kreme’s history, many schools, charities and not-for-profit organizations have raised funds through selling Krispy Kreme Original Glazed doughnuts! Traditional Original Glazed Doughnut Sales by the dozen is how we can help you achieve your fundraising goals!
+			</p>
+			<img class="m-5" src={Fundraising1} width="300" height="140" />
+			<span class="text-kk-red">Raise Some Dough Today!</span>
+			<p>
+				<span class="font-bold">Krispy Kreme</span> offers our doughnuts to non-profit groups at a reduced price, which are then resold for full retail price, or slightly higher. Pre-selling doughnuts to family, friends and neighbours or selling doughnuts at high-traffic areas such as shopping centers or community festivals can generate significant funds.
+			</p>
+		</section>
+		<section class="md:px-40 p-1 flex flex-col justify-start items-start font-bold">
+			<span>Your Cost: $7 / dozen</span>
+			<span>Suggested Selling Price: $12 - $16 / dozen</span>
+			<span>Quantity: 50 dozen or more</span>
+		</section>
+		<section class="md:px-40 flex flex-col justify-center items-center">
+			<img src={Fundraising2} />
+			<span class="text-kk-red">How to Participate</span>
+		</section>
+		<section class="md:px-40 p-5 flex flex-col justify-start items-center gap-5">
+			<p>
+				To participate in FUNDRAISING in Canada*, the first step is to contact the Krispy Kreme store that you would like to pick up the doughnuts from.
+			</p>
+			<p class="font-bold">
+				PLEASE NOTE THAT FUNDRAISING DOUGHNUTS ARE AVAILABLE ON A LIMITED BASIS SO IT IS IMPORTANT THAT YOU CONFIRM AVAILABILITY FOR YOUR REQUIRED DATE PRIOR TO INITIATING ANY SALES.
+			</p>
+			<p>
+				After that, download, print and submit a FUNDRAISING Application / Purchase Order Agreement along with a letter on your not-for-profit organization’s letterhead to your local Krispy Kreme store.
+			</p>
+			<p>
+				The letter should acknowledge the fundraiser, stating how the raised funds will be used, and signed by an organizational executive. A member of our team will contact you within 3 business days of receiving your completed application and letter, to assist with the planning and execution of your fundraiser.
+			</p>
+			<p>
+				You can also coordinate your Krispy Kreme fundraiser with your local Krispy Kreme store. To locate the store nearest you, use our convenient <a href="/find-a-store" class="text-kk-green">store locator</a>.
+			</p>
+			<p>
+				If you have any additional questions or you have difficulty printing any of the FUNDRAISING forms, please contact your local Krispy Kreme store or email us at <a  class="text-kk-green" href="mailto:fundraising@krispykreme.ca">fundraising@krispykreme.ca</a>.
+			</p>
+		</section>
+		<Footer />
 	</body>
 </html>

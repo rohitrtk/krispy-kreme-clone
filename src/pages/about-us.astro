@@ -1,5 +1,6 @@
 ---
 import Head from "@components/Head.astro";
+import Header from "@components/Header.astro";
 import Banner from "@components/Banner.astro";
 import Footer from "@components/Footer.astro";
 
@@ -14,11 +15,9 @@ import About6 from "@assets/about/about6.png";
 <html lang="en">
 	<Head title="About Us"/>
 	<body>
-		<Banner />
+		<Header />
 
-		<div class="w-full h-[230px] flex flex-col justify-center items-center text-center" style={`background-image: url(${About1})`}>
-			<span class="text-white font-bold text-6xl">ABOUT US</span>
-		</div>
+		<Banner title="ABOUT US"/>
 		<div class="w-full h-auto flex justify-center -mt-16">
 			<img src={About2} />
 		</div>
