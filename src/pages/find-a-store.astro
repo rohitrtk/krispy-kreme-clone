@@ -1,12 +1,35 @@
 ---
 import Head from "@components/Head.astro";
+import Header from "@components/Header.astro";
 import Banner from "@components/Banner.astro";
+import Footer from "@components/Footer.astro";
+import Location, { TLocation } from "@components/Location.astro";
+
+import TorontoLocations from "@assets/locations.json";
+
+const torontoLocations = JSON.stringify(TorontoLocations);
 ---
 
 <html lang="en">
 	<Head title="Find a Store"/>
 	<body>
-		<Banner />
-		<h1>Find a store</h1>
+		<Header />
+
+		<Banner title="FIND A STORE"/>
+		<section class="md:px-40 md:pt-10 p-1 flex flex-col justify-center items-center text-center">
+			<span>See the list below to locate a Krispy Kreme store near you.</span>
+			<span>Be sure to check back often as we will be adding additional locations soon.</span>
+		</section>
+	
+		<section id="locations-container" class="md:px-20 md:py-10 p-1 md:grid md:grid-cols-2 flex flex-col gap-5">
+			{JSON.parse(torontoLocations).map((loc: TLocation) => {
+				return <Location {...loc} />
+			})}
+		</section>
+
+		<div class="text-center">
+			<a class="text-kk-red" href="https://www.google.com/maps/search/krispy+kreme" target="_blank">Other Locations</a>
+		</div>
+		<Footer />
 	</body>
 </html>

@@ -1,0 +1,106 @@
+[
+  {
+    "city": "Toronto",
+    "sub": "Bloor St",
+    "address": [
+      "2424 Bloor Street West",
+      "Toronto ON"
+    ],
+    "postalCode": "M6S 1P9",
+    "times": [
+      {
+        "days": "Monday - Saturday",
+        "time": "7AM - 10PM"
+      },
+      {
+        "days": "Sunday",
+        "time": "8AM - 8PM"
+      }
+    ],
+    "embedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11547.69052670285!2d-79.483318!3d43.649778!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b36882fd02077%3A0xfd0e74bd38493413!2s2424%20Bloor%20St%20W%2C%20Toronto%2C%20ON%20M6S%201P9!5e0!3m2!1sen!2sca!4v1682198426523!5m2!1sen!2sca"
+  },
+  {
+    "city": "Toronto",
+    "sub": "Dupont St.",
+    "address": [
+      "284 Dupont Street (corner Spadina)",
+      "Toronto ON"
+    ],
+    "postalCode": "M5R 1V9",
+    "telephone": "647-348-8870",
+    "times": [
+      {
+        "days": "Monday - Saturday",
+        "time": "7AM - 10PM"
+      },
+      {
+        "days": "Sunday",
+        "time": "8AM - 8PM"
+      }
+    ],
+    "embedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11542.85476714062!2d-79.407644!3d43.674924!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34994e70ca53%3A0x69c0f25e8d55678b!2s284%20Dupont%20St%2C%20Toronto%2C%20ON%20M5R%201V9!5e0!3m2!1sen!2sca!4v1682198485553!5m2!1sen!2sca"
+  },
+  {
+    "city": "Toronto",
+    "sub": "Harbord St.",
+    "address": [
+      "215 Harbord St. (corner Bathurst)",
+      "Toronto ON"
+    ],
+    "postalCode": "M5S 1H6",
+    "telephone": "647-351-8911",
+    "times": [
+      {
+        "days": "Monday - Saturday",
+        "time": "7AM - 10PM"
+      },
+      {
+        "days": "Sunday",
+        "time": "8AM - 8PM"
+      }
+    ],
+    "embedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11545.44619235561!2d-79.409451!3d43.66145!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34934c2eb81b%3A0x375c597416155953!2s215%20Harbord%20St%2C%20Toronto%2C%20ON%20M5S%201H6!5e0!3m2!1sen!2sca!4v1682198527867!5m2!1sen!2sca"
+  },
+  {
+    "city": "Toronto",
+    "sub": "McCaul St.",
+    "address": [
+      "164 McCaul St. (between Dundas & Baldwin)",
+      "Toronto ON"
+    ],
+    "postalCode": "M5T 1W3",
+    "telephone": "647-345-4439",
+    "times": [
+      {
+        "days": "Monday - Saturday",
+        "time": "7AM - 10PM"
+      },
+      {
+        "days": "Sunday",
+        "time": "8AM - 8PM"
+      }
+    ],
+    "embedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11546.545345367576!2d-79.392142!3d43.655734!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34c619805c05%3A0x4a85620f6b4788ab!2s164%20McCaul%20St%2C%20Toronto%2C%20ON%20M5T%201W4!5e0!3m2!1sen!2sca!4v1682198545934!5m2!1sen!2sca"
+  },
+  {
+    "city": "Toronto",
+    "sub": "Spadina Ave.",
+    "address": [
+      "400 Spadina Ave (corner Nassau)",
+      "Toronto ON"
+    ],
+    "postalCode": "M5T 2G7",
+    "telephone": "647-352-7889",
+    "times": [
+      {
+        "days": "Monday - Saturday",
+        "time": "7AM - 10PM"
+      },
+      {
+        "days": "Sunday",
+        "time": "8AM - 8PM"
+      }
+    ],
+    "embedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11546.50227365509!2d-79.399577!3d43.655958!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34c17b98c385%3A0x22d2c5b188051f9f!2s402%20Spadina%20Ave.%2C%20Toronto%2C%20ON%20M5T%202G7!5e0!3m2!1sen!2sca!4v1682198570751!5m2!1sen!2sca"
+  }
+]

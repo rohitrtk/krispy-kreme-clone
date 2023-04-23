@@ -1,0 +1,41 @@
+---
+interface Props {
+  city: string;
+  sub?: string;
+  address: string[2];
+  postalCode: string;
+  times: {
+    days: string;
+    time: string;
+  }[];
+  embedUrl: string;
+}
+
+export type TLocation = Props;
+
+const { city, sub, address, postalCode, times, embedUrl } = Astro.props;
+---
+
+<div>
+  <iframe class="border-none w-full" loading="lazy" src={embedUrl} height="215" allowfullscreen="true" />
+  <div class="flex flex-col">
+    <div class="flex flex-row gap-2">
+      <span class="font-bold">{city}</span>
+      <span class="text-gray-400">{sub ? `(${sub})` : ""}</span>
+    </div>
+    <div class="flex flex-row gap-5">
+      <div class="flex flex-col justify-start">
+        <span>{ address[0] }</span>
+        <span>{ address[1] }</span>
+        <span>{ postalCode }</span>
+      </div>
+      <div class="flex flex-col justify-start">
+        {
+          times.map(time => {
+            return <span>{ time.days }: { time.time }</span>
+          })
+        }
+      </div>
+    </div>
+  </div>
+</div>
