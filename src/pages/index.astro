@@ -47,24 +47,26 @@ import "@styles/global.css";
 			</div>
 		</section>
 
-		<section>
+		<section class="w-full">
 			<div class="flex flex-col p-2">
-				<div class="relative justify-center items-center text-center">
-					<img class="" src={Home4} />
-					<span class="text-green-800">NEED to RAI$E some DOUGH?</span>
+				<div class="flex flex-col justify-center items-center text-center h-[300px] bg-cover bg-no-repeat" style={`background-image: url(${Home4})`}>
+					<p class="text-green-800 text-4xl">NEED <span class="font-secondary text-5xl">to</span> RAI$E<br><span class="font-secondary text-5xl">some</span> DOUGH?</p>
+					<p class="text-2xl w-1/2">Krispy Kreme can help you and your community achieve your fundraising goals today.</p>
+					<a href="" class="rounded-full bg-kk-red text-white py-2 px-5">LEARN HOW</a>
 				</div>
 				<div class="flex flex-row">
-					<div class="relative w-1/2 border-solid border-green-800 border-4 flex flex-col justify-center items-center text-center p-20 gap-5">
-						<img class="absolute" src={Home5} />
-						<span>Become part of the</span>
-						<span class="text-green-800">Krispy Kreme Team</span>
+					<div class="w-1/2 border-solid border-green-800 border-4 flex flex-col justify-center items-center text-center p-20 gap-5" style={`background-image: url(${Home5})`}>
+						<span class="text-kk-red font-secondary text-2xl">Become part of the</span>
+						<span class="text-green-800 text-4xl">Krispy Kreme Team</span>
 						<span>Our product may be special and unique - but it's our people who make the difference</span>
-						<button class="bg-red-600 text-white rounded-full px-5 py-2">
+						<a href="" class="bg-kk-red text-white rounded-full px-5 py-2">
 							APPLY NOW
-						</button>
+						</a>
 					</div>
-					<div class="relative w-1/2 flex flex-col justify-center items-center text-center p-20 gap-5">
-						<img class="absolute w-full" src={Home6} />
+					<div class="text-white w-1/2 flex flex-col justify-center items-center text-center p-20 gap-5 bg-cover bg-no-repeat" style={`background-image: url(${Home6})`}>
+						<span class="text-4xl">FIND A LOCATION</span>
+						<span>Follow the link below to location a store nearest to you. More stores to come, we promise!</span>
+						<a href="/find-a-store" class="rounded-full bg-kk-red px-5 py-2">LOCATIONS</a>
 					</div>
 				</div>
 			</div>
