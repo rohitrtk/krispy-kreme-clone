@@ -1,0 +1,222 @@
+{
+  "doughnuts": [
+    {
+      "name": "Original Glazed",
+      "url": "/menu/doughnuts/original-1.png"
+    },
+    {
+      "name": "Original Filled Original Kreme",
+      "url": "/menu/doughnuts/original-2.png"
+    },
+    {
+      "name": "Original Filled Chocolate Kreme",
+      "url": "/menu/doughnuts/original-3.png"
+    },
+    {
+      "name": "Chocolate Iced Glazed",
+      "url": "/menu/doughnuts/chocolate-iced.png"
+    },
+    {
+      "name": "Maple Iced Glazed",
+      "url": "/menu/doughnuts/maple-iced.png"
+    },
+    {
+      "name": "Chocolate Iced Kreme Filled",
+      "url": "/menu/doughnuts/chocolate-iced-kreme-filled.png"
+    },
+    {
+      "name": "Chocolate Iced Sprinkles",
+      "url": "/menu/doughnuts/chocolate-iced-sprinkles.png"
+    },
+    {
+      "name": "Oreo & Chips Ahoy! Cookie Blast",
+      "url": "/menu/doughnuts/cookie-blast-1.png"
+    },
+    {
+      "name": "Oreo Cookie & Kreme Filled",
+      "url": "/menu/doughnuts/cookie-blast-2.png"
+    },
+    {
+      "name": "Chips Ahoy! Cookie Dough Kreme",
+      "url": "/menu/doughnuts/cookie-blast-3.png"
+    },
+    {
+      "name": "Chips Ahoy! Candy Blasts",
+      "url": "/menu/doughnuts/cookie-blast-4.png"
+    },
+    {
+      "name": "Chocolate Iced Custard Filled",
+      "url": "/menu/doughnuts/chocolate-iced-kreme-filled.png"
+    },
+    {
+      "name": "Strawberry Iced",
+      "url": "/menu/doughnuts/strawberry-iced.png"
+    },
+    {
+      "name": "Strawberry Iced w/ Sprinkles",
+      "url": "/menu/doughnuts/strawberry-iced-sprinkles.png"
+    },
+    {
+      "name": "Minis",
+      "url": "/menu/doughnuts/mini-og.png"
+    },
+    {
+      "name": "Mini Chocolate Iced Glazed",
+      "url": "/menu/doughnuts/mini-choc.png"
+    },
+    {
+      "name": "Glazed Chocolate Cake",
+      "url": "/menu/doughnuts/chocolate-cake.png"
+    },
+    {
+      "name": "Cake Batter",
+      "url": "/menu/doughnuts/birthday-batter.png"
+    },
+    {
+      "name": "Oreo® Cookies & Kreme",
+      "url": "/menu/doughnuts/oreo-cookies-and-kreme.png"
+    },
+    {
+      "name": "Glazed Rasberry Filled",
+      "url": "/menu/doughnuts/glazed-rasberry-filled.png"
+    },
+    {
+      "name": "Glazed Lemon Filled",
+      "url": "/menu/doughnuts/glazed-lemon-filled.png"
+    },
+    {
+      "name": "Sugar",
+      "url": "/menu/doughnuts/sugar.png"
+    },
+    {
+      "name": "Cinnamon Apple Filled",
+      "url": "/menu/doughnuts/cinnamon-apple-filled.png"
+    },
+    {
+      "name": "Powdered Strawberry Filled",
+      "url": "/menu/doughnuts/powdered-strawberry-filled.png"
+    },
+    {
+      "name": "New York Cheesecake",
+      "url": "/menu/doughnuts/new-york-cheesecake.png"
+    },
+    {
+      "name": "Caramel Kreme Crunch",
+      "url": "/menu/doughnuts/caramel-kreme-crunch.png"
+    },
+    {
+      "name": "Apple Fritter",
+      "url": "/menu/doughnuts/fritter.png"
+    },
+    {
+      "name": "Basketball",
+      "url": "/menu/doughnuts/basketball.png"
+    },
+    {
+      "name": "Football",
+      "url": "/menu/doughnuts/football.png"
+    }
+  ],
+  "drinks": [
+    {
+      "name": "Brew Box",
+      "url": "/menu/drinks/brewbox.jpg"
+    },
+    {
+      "name": "Cappuccino",
+      "url": "/menu/drinks/cappuccino.png"
+    },
+    {
+      "name": "Kaffe Kreme",
+      "url": "/menu/drinks/cappuccino.png"
+    },
+    {
+      "name": "Latte",
+      "url": "/menu/drinks/cappuccino.png"
+    },
+    {
+      "name": "Mocha",
+      "url": "/menu/drinks/mocha.png"
+    },
+    {
+      "name": "Dark Roast",
+      "url": "/menu/drinks/coffee.png"
+    },
+    {
+      "name": "House Blend",
+      "url": "/menu/drinks/coffee.png"
+    },
+    {
+      "name": "Iced Coffee",
+      "url": "/menu/drinks/iced-coffee.jpg"
+    },
+    {
+      "name": "Hot Chocolate",
+      "url": "/menu/drinks/hot-chocolate.jpg"
+    },
+    {
+      "name": "Tea",
+      "url": "/menu/drinks/tea.jpg"
+    }
+  ],
+  "frozenDrinks": [
+    {
+      "name": "Espresso Frozze",
+      "url": "/menu/frozen/frozze-espresso.jpg"
+    },
+    {
+      "name": "Mocha Frozze",
+      "url": "/menu/frozen/frozze-mocha.jpg"
+    },
+    {
+      "name": "Caramel Espresso Frozze",
+      "url": "/menu/frozen/frozze-caramel.jpg"
+    },
+    {
+      "name": "Chocolate Frozze",
+      "url": "/menu/frozen/frozze-chocolate.jpg"
+    },
+    {
+      "name": "Triple Chocolate Frozze",
+      "url": "/menu/frozen/frozze-triple-chocolate.jpg"
+    },
+    {
+      "name": "Starberry Frozze",
+      "url": "/menu/frozen/frozze-strawberry.jpg"
+    },
+    {
+      "name": "Mango Frozze",
+      "url": "/menu/frozen/frozze-mango.jpg"
+    },
+    {
+      "name": "Mixed Berry Frozze",
+      "url": "/menu/frozen/frozze-mixed-berry.jpg"
+    },
+    {
+      "name": "Krispy Kreme Chillers",
+      "url": "/menu/frozen/chillers.jpg"
+    },
+    {
+      "name": "Milk",
+      "url": "/menu/frozen/milk.jpg"
+    },
+    {
+      "name": "Chocolate Milk",
+      "url": "/menu/frozen/chocolate-milk.jpg"
+    }
+  ],
+  "bakedGoods": [
+    {
+      "name": "Muffins",
+      "url": "/menu/baked/muffins.jpg"
+    },
+    {
+      "name": "Bagels",
+      "url": "/menu/baked/bagels.jpg"
+    },
+    {
+      "name": "Croissants",
+      "url": "/menu/baked/logo.jpg"
+    }
+  ]
+}
