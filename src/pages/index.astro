@@ -3,12 +3,13 @@ import Head from "@components/Head.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 
-import Home1 from "@assets/home1.jpg";
-import Home2 from "@assets/home2.jpg";
-import Home3 from "@assets/home3.jpg";
-import Home4 from "@assets/home4.jpg";
-import Home5 from "@assets/home5.png";
-import Home6 from "@assets/home6.png";
+import Home1 from "@assets/home/home1.jpg";
+import Home2 from "@assets/home/home2.jpg";
+import Home3 from "@assets/home/home3.jpg";
+import Home4 from "@assets/home/home4.jpg";
+import Home5 from "@assets/home/home5.png";
+import Home6 from "@assets/home/home6.png";
+import Pin from "@assets/icons/pin.png";
 
 import Doughnuts from "@assets/icons/Doughnuts.svg";
 import CoffeeEspresso from "@assets/icons/CoffeeEspresso.svg";
@@ -64,6 +65,7 @@ import "@styles/global.css";
 						</a>
 					</div>
 					<div class="text-white w-1/2 flex flex-col justify-center items-center text-center p-20 gap-5 bg-cover bg-no-repeat" style={`background-image: url(${Home6})`}>
+						<img src={Pin} />
 						<span class="text-4xl">FIND A LOCATION</span>
 						<span>Follow the link below to location a store nearest to you. More stores to come, we promise!</span>
 						<a href="/find-a-store" class="rounded-full bg-kk-red px-5 py-2">LOCATIONS</a>
