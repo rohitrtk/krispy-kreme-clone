@@ -11,23 +11,24 @@ const torontoLocations = JSON.stringify(TorontoLocations);
 
 <html lang="en">
 	<Head title="Find a Store"/>
-	<body>
+	<body class="font-primary">
 		<Header />
 
 		<Banner title="FIND A STORE"/>
 		<section class="md:px-40 md:pt-10 p-1 flex flex-col justify-center items-center text-center">
 			<span>See the list below to locate a Krispy Kreme store near you.</span>
 			<span>Be sure to check back often as we will be adding additional locations soon.</span>
+			<hr class="h-px border-none bg-black md:w-full w-2/3 my-10">
 		</section>
 	
-		<section id="locations-container" class="md:px-20 md:py-10 p-1 md:grid md:grid-cols-2 flex flex-col gap-5">
+		<section id="locations-container" class="md:px-20 p-1 md:grid md:grid-cols-2 flex flex-col gap-5">
 			{JSON.parse(torontoLocations).map((loc: TLocation) => {
 				return <Location {...loc} />
 			})}
 		</section>
 
 		<div class="text-center">
-			<a class="text-kk-red" href="https://www.google.com/maps/search/krispy+kreme" target="_blank">Other Locations</a>
+			<a class="text-kk-red text-2xl font-secondary" href="https://www.google.com/maps/search/krispy+kreme" target="_blank">Other Locations</a>
 		</div>
 		<Footer />
 	</body>

@@ -6,22 +6,22 @@ import Facebook from "@assets/icons/Facebook.svg";
 import Twitter from "@assets/icons/Twitter.svg";
 ---
 <footer class="m-5">
-  <div class="m-5 flex flex-row justify-between text-green-800 font-bold">
-    <a href="/"><img src={Logo2} /></a>
+  <div class="m-5 flex md:flex-row flex-col justify-between text-green-800 font-bold items-center text-center">
+    <a class="py-2" href="/"><img src={Logo2} /></a>
 
-    <div class="flex flex-col justify-evenly">
+    <div class="flex flex-col justify-evenly [&>*]:pb-2">
       <a href="">CAREERS</a>
       <a href="">HISTORY</a>
       <a href="/fundraising-community">FUNDRAISING</a>
     </div>
 
-    <div class="flex flex-col justify-evenly">
+    <div class="flex flex-col justify-evenly [&>*]:pb-2">
       <a href="/about-us">ABOUT US</a>
       <a href="/our-menu">OUR MENU</a>
       <a href="mailto:fundraising@krispykreme.ca">CONTACT</a>
     </div>
 
-    <div class="flex flex-col justify-evenly">
+    <div class="flex md:flex-col flex-row justify-evenly md:gap-2 gap-5">
       <a href="instagram.com/krispykremecan" class="rounded-full w-[25px] h-[25px]">
         <img src={Instagram} />
       </a>

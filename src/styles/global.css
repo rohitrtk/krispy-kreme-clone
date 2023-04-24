@@ -1,10 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans:wght@500&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url("https://fonts.cdnfonts.com/css/brandon-grotesque-bold");
-@layer base {
-  html {
-    font-family: "Brandon Grotesque Bold", sans-serif;
-  }
-}

@@ -8,6 +8,10 @@ module.exports = {
 				"kk-red": "#CF2E2E",
 				"kk-green": "#006938"
 			},
+			fontFamily: {
+				"primary": ["Josefin Sans", "sans-serif"],
+				"secondary": ["Dancing Script", "cursive"]
+			}
 		}
 	},
 	plugins: [],
