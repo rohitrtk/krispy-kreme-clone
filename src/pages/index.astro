@@ -21,59 +21,99 @@ import "@styles/global.css";
 ---
 
 <html lang="en">
-	<Head title="Home"/>
-	<body class="font-primary">
-		<Header />
-		<section>
-			<div class="grid grid-cols-2 gap-4">	
-				<img class="col-span-2" src={Home1} />
-				<img class="md:col-span-1 col-span-2" src={Home2} />
-				<img class="md:col-span-1 col-span-2" src={Home3} />
-			</div>
-		</section>
+  <Head title="Home" />
+  <body class="font-primary m-0">
+    <Header />
+    <section>
+      <div class="grid grid-cols-2 gap-4">
+        <img class="col-span-2 w-full" src={Home1} />
+        <img class="md:col-span-1 col-span-2" src={Home2} />
+        <img class="md:col-span-1 col-span-2" src={Home3} />
+      </div>
+    </section>
 
-		<section class="flex flex-col justify-center items-center pt-5 my-5">
-			<div class="text-center mb-10">
-				<span class="text-red-600 font-secondary text-2xl">Discover</span>
-				<br>
-				<span class="text-green-800 font-bold text-4xl">OUR MENU</span>
-			</div>
+    <section class="flex flex-col justify-center items-center pt-5 my-5">
+      <div class="text-center mb-10">
+        <span class="text-red-600 font-secondary text-2xl">Discover</span>
+        <br />
+        <span class="text-green-800 font-bold text-4xl">OUR MENU</span>
+      </div>
 
-			<div class="flex flex-row flex-wrap justify-center items-center text-gray-800 text-center font-bold gap-16">
-				<a class="hover:text-kk-green" href="/our-menu?product=donuts"><img src={Doughnuts} /><span class="">Doughnuts</span></a>
-				<a class="hover:text-kk-green" href="/our-menu?product=drinks"><img src={CoffeeEspresso} /><span class="">Coffee & Espresso</span></a>
-				<a class="hover:text-kk-green" href="/our-menu?product=frozen-drinks"><img src={FrozenDrinks} /><span class="">Frozen Drinks</span></a>
-				<a class="hover:text-kk-green" href="/our-menu?product=baked-goods"><img src={BakedGoods} /><span class="">Baked Goods</span></a>
-				<a class="hover:text-kk-green" href=""><img src={Collectibles} /><span class="">Collectibles</span></a>
-			</div>
-		</section>
+      <div
+        class="flex flex-row flex-wrap justify-center items-center text-gray-800 text-center font-bold gap-16"
+      >
+        <a class="hover:text-kk-green" href="/our-menu?product=donuts"
+          ><img src={Doughnuts} /><span class="">Doughnuts</span></a
+        >
+        <a class="hover:text-kk-green" href="/our-menu?product=drinks"
+          ><img src={CoffeeEspresso} /><span class="">Coffee & Espresso</span
+          ></a
+        >
+        <a class="hover:text-kk-green" href="/our-menu?product=frozen-drinks"
+          ><img src={FrozenDrinks} /><span class="">Frozen Drinks</span></a
+        >
+        <a class="hover:text-kk-green" href="/our-menu?product=baked-goods"
+          ><img src={BakedGoods} /><span class="">Baked Goods</span></a
+        >
+        <a class="hover:text-kk-green" href=""
+          ><img src={Collectibles} /><span class="">Collectibles</span></a
+        >
+      </div>
+    </section>
 
-		<section class="w-full">
-			<div class="flex flex-col p-2">
-				<div class="flex flex-col justify-center items-center text-center h-[300px] bg-cover bg-no-repeat" style={`background-image: url(${Home4})`}>
-					<p class="text-green-800 text-4xl">NEED <span class="font-secondary text-5xl">to</span> RAI$E<br><span class="font-secondary text-5xl">some</span> DOUGH?</p>
-					<p class="text-2xl w-1/2">Krispy Kreme can help you and your community achieve your fundraising goals today.</p>
-					<a href="" class="rounded-full bg-kk-red text-white py-2 px-5">LEARN HOW</a>
-				</div>
-				<div class="flex flex-row">
-					<div class="w-1/2 border-solid border-green-800 border-4 flex flex-col justify-center items-center text-center p-20 gap-5" style={`background-image: url(${Home5})`}>
-						<span class="text-kk-red font-secondary text-2xl">Become part of the</span>
-						<span class="text-green-800 text-4xl">Krispy Kreme Team</span>
-						<span>Our product may be special and unique - but it's our people who make the difference</span>
-						<a href="" class="bg-kk-red text-white rounded-full px-5 py-2">
-							APPLY NOW
-						</a>
-					</div>
-					<div class="text-white w-1/2 flex flex-col justify-center items-center text-center p-20 gap-5 bg-cover bg-no-repeat" style={`background-image: url(${Home6})`}>
-						<img src={Pin} />
-						<span class="text-4xl">FIND A LOCATION</span>
-						<span>Follow the link below to location a store nearest to you. More stores to come, we promise!</span>
-						<a href="/find-a-store" class="rounded-full bg-kk-red px-5 py-2">LOCATIONS</a>
-					</div>
-				</div>
-			</div>
-		</section>
+    <section class="w-full">
+      <div class="flex flex-col p-2">
+        <div
+          class="flex flex-col justify-center items-center text-center h-[300px] bg-cover bg-no-repeat"
+          style={`background-image: url(${Home4})`}
+        >
+          <p class="text-green-800 text-4xl">
+            NEED <span class="font-secondary text-5xl">to</span> RAI$E<br
+            /><span class="font-secondary text-5xl">some</span> DOUGH?
+          </p>
+          <p class="text-2xl w-1/2">
+            Krispy Kreme can help you and your community achieve your
+            fundraising goals today.
+          </p>
+          <a href="" class="rounded-full bg-kk-red text-white py-2 px-5"
+            >LEARN HOW</a
+          >
+        </div>
+        <div class="flex flex-row">
+          <div
+            class="w-1/2 border-solid border-green-800 border-4 flex flex-col justify-center items-center text-center p-20 gap-5"
+            style={`background-image: url(${Home5})`}
+          >
+            <span class="text-kk-red font-secondary text-2xl"
+              >Become part of the</span
+            >
+            <span class="text-green-800 text-4xl">Krispy Kreme Team</span>
+            <span
+              >Our product may be special and unique - but it's our people who
+              make the difference</span
+            >
+            <a href="" class="bg-kk-red text-white rounded-full px-5 py-2">
+              APPLY NOW
+            </a>
+          </div>
+          <div
+            class="text-white w-1/2 flex flex-col justify-center items-center text-center p-20 gap-5 bg-cover bg-no-repeat"
+            style={`background-image: url(${Home6})`}
+          >
+            <img src={Pin} />
+            <span class="text-4xl">FIND A LOCATION</span>
+            <span
+              >Follow the link below to location a store nearest to you. More
+              stores to come, we promise!</span
+            >
+            <a href="/find-a-store" class="rounded-full bg-kk-red px-5 py-2"
+              >LOCATIONS</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<Footer />
-	</body>
+    <Footer />
+  </body>
 </html>

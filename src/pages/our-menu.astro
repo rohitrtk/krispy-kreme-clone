@@ -31,7 +31,7 @@ const { doughnuts, drinks, frozenDrinks, bakedGoods }: TMenuItems = MenuItems;
 	<body class="font-primary">
 		<Header />
 
-		<Banner title="Our Menu" />
+		<Banner title="OUR MENU" />
 
 		<section class="md:px-40 md:pt-10 p-1 flex flex-col justify-center items-center text-center gap-5">
 			<p>
@@ -43,7 +43,7 @@ const { doughnuts, drinks, frozenDrinks, bakedGoods }: TMenuItems = MenuItems;
 
 		<section class="md:px-40 md:pt-10 p-1 flex flex-col justify-center items-center text-center gap-10">
 			<hr class="h-px border-none bg-black md:w-full w-2/3">
-			<ul class="flex flex-row items-center justify-between gap-5 whitespace-nowrap w-full">
+			<ul class="flex flex-row flex-wrap items-center justify-between md:gap-5 gap-0 whitespace-nowrap w-full">
 				<li class="flex flex-col justify-center items-center gap-2 cursor-pointer" data-menu-btn>
 					<img src={Doughnuts} width="64" height="64">
 					<span class="font-bold">Doughnuts</span>

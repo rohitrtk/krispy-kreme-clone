@@ -8,6 +8,9 @@ interface Props {
 const { title } = Astro.props;
 ---
 
-<div class="w-full h-[230px] flex flex-col justify-center items-center text-center" style={`background-image: url(${BannerPhoto})`}>
+<div
+  class="w-full h-[230px] flex flex-col justify-center items-center text-center bg-cover bg-no-repeat"
+  style={`background-image: url(${BannerPhoto})`}
+>
   <span class="text-white font-bold text-6xl">{title}</span>
 </div>
